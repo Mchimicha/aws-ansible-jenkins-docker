@@ -1,0 +1,1470 @@
+2021-06-30T08:57:04.036+0200 [DEBUG] Adding temp file log sink: /tmp/terraform-log399017579
+2021-06-30T08:57:04.036+0200 [INFO]  Terraform version: 1.0.0
+2021-06-30T08:57:04.036+0200 [INFO]  Go runtime version: go1.16.4
+2021-06-30T08:57:04.036+0200 [INFO]  CLI args: []string{"/usr/local/bin/terraform", "plan"}
+2021-06-30T08:57:04.036+0200 [TRACE] Stdout is a terminal of width 151
+2021-06-30T08:57:04.036+0200 [TRACE] Stderr is a terminal of width 151
+2021-06-30T08:57:04.036+0200 [TRACE] Stdin is a terminal
+2021-06-30T08:57:04.036+0200 [DEBUG] Attempting to open CLI config file: /home/maroua/.terraformrc
+2021-06-30T08:57:04.036+0200 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021-06-30T08:57:04.036+0200 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021-06-30T08:57:04.036+0200 [DEBUG] ignoring non-existing provider search directory /home/maroua/.terraform.d/plugins
+2021-06-30T08:57:04.036+0200 [DEBUG] ignoring non-existing provider search directory /home/maroua/.local/share/terraform/plugins
+2021-06-30T08:57:04.037+0200 [DEBUG] ignoring non-existing provider search directory /usr/share/ubuntu/terraform/plugins
+2021-06-30T08:57:04.037+0200 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2021-06-30T08:57:04.037+0200 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2021-06-30T08:57:04.037+0200 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2021-06-30T08:57:04.037+0200 [ERROR] Checkpoint error: open /home/maroua/.terraform.d/checkpoint_signature: permission denied
+2021-06-30T08:57:04.037+0200 [INFO]  CLI command args: []string{"plan"}
+2021-06-30T08:57:04.039+0200 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2021-06-30T08:57:04.039+0200 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2021-06-30T08:57:04.039+0200 [DEBUG] New state was assigned lineage "5b67bf41-7e86-43d3-c053-647db1f6875b"
+2021-06-30T08:57:04.039+0200 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2021-06-30T08:57:04.039+0200 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2021-06-30T08:57:04.040+0200 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2021-06-30T08:57:04.040+0200 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v3.47.0 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64
+2021-06-30T08:57:04.041+0200 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/aws 3.47.0
+2021-06-30T08:57:07.108+0200 [DEBUG] checking for provisioner in "."
+2021-06-30T08:57:07.108+0200 [DEBUG] checking for provisioner in "/usr/local/bin"
+2021-06-30T08:57:07.110+0200 [INFO]  Failed to read plugin lock file .terraform/plugins/linux_amd64/lock.json: open .terraform/plugins/linux_amd64/lock.json: no such file or directory
+2021-06-30T08:57:07.110+0200 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2021-06-30T08:57:07.110+0200 [INFO]  backend/local: starting Plan operation
+2021-06-30T08:57:07.111+0200 [TRACE] backend/local: requesting state manager for workspace "default"
+2021-06-30T08:57:07.111+0200 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2021-06-30T08:57:07.111+0200 [TRACE] backend/local: requesting state lock for workspace "default"
+2021-06-30T08:57:07.111+0200 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2021-06-30T08:57:07.111+0200 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2021-06-30T08:57:07.111+0200 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2021-06-30T08:57:07.111+0200 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2021-06-30T08:57:07.111+0200 [TRACE] backend/local: reading remote state for workspace "default"
+2021-06-30T08:57:07.111+0200 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2021-06-30T08:57:07.111+0200 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2021-06-30T08:57:07.111+0200 [TRACE] statemgr.Filesystem: read nil snapshot
+2021-06-30T08:57:07.111+0200 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2021-06-30T08:57:07.112+0200 [TRACE] backend/local: building context for current working directory
+2021-06-30T08:57:07.112+0200 [DEBUG] backend/local: will prompt for input of unset required variables [name]
+2021-06-30T08:57:07.112+0200 [DEBUG] command: asking for input: "var.name"
+2021-06-30T08:57:11.441+0200 [TRACE] terraform.NewContext: starting
+2021-06-30T08:57:11.442+0200 [TRACE] terraform.NewContext: loading provider schemas
+2021-06-30T08:57:11.442+0200 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/aws"
+2021-06-30T08:57:11.442+0200 [DEBUG] created provider logger: level=trace
+2021-06-30T08:57:11.442+0200 [INFO]  provider: configuring client automatic mTLS
+2021-06-30T08:57:11.590+0200 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5]
+2021-06-30T08:57:11.590+0200 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 pid=20168
+2021-06-30T08:57:11.591+0200 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5
+2021-06-30T08:57:11.689+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: configuring server automatic mTLS: timestamp=2021-06-30T08:57:11.688+0200
+2021-06-30T08:57:11.846+0200 [DEBUG] provider.terraform-provider-aws_v3.47.0_x5: plugin address: address=/tmp/plugin863973043 network=unix timestamp=2021-06-30T08:57:11.846+0200
+2021-06-30T08:57:11.846+0200 [DEBUG] provider: using plugin: version=5
+2021-06-30T08:57:12.020+0200 [TRACE] GRPCProvider: GetProviderSchema
+2021-06-30T08:57:12.024+0200 [TRACE] provider.stdio: waiting for stdio data
+2021-06-30T08:57:12.357+0200 [TRACE] GRPCProvider: Close
+2021-06-30T08:57:12.358+0200 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-06-30T08:57:12.368+0200 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 pid=20168
+2021-06-30T08:57:12.368+0200 [DEBUG] provider: plugin exited
+2021-06-30T08:57:12.369+0200 [TRACE] terraform.NewContext: complete
+2021-06-30T08:57:12.369+0200 [TRACE] backend/local: finished building terraform.Context
+2021-06-30T08:57:12.369+0200 [TRACE] backend/local: requesting interactive input, if necessary
+2021-06-30T08:57:12.369+0200 [TRACE] Context.Input: Prompting for provider arguments
+2021-06-30T08:57:12.369+0200 [TRACE] Context.Input: Provider provider.aws declared at main.tf:1,1-15
+2021-06-30T08:57:12.369+0200 [TRACE] Context.Input: Input for provider.aws: map[string]cty.Value{}
+2021-06-30T08:57:12.369+0200 [TRACE] backend/local: running validation operation
+2021-06-30T08:57:12.369+0200 [INFO]  terraform: building graph: GraphTypeValidate
+2021-06-30T08:57:12.370+0200 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2021-06-30T08:57:12.370+0200 [TRACE] ConfigTransformer: Starting for path:
+2021-06-30T08:57:12.370+0200 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+  ------
+2021-06-30T08:57:12.370+0200 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2021-06-30T08:57:12.370+0200 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:12.370+0200 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2021-06-30T08:57:12.370+0200 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2021-06-30T08:57:12.370+0200 [TRACE] Executing graph transform *terraform.LocalTransformer
+2021-06-30T08:57:12.370+0200 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2021-06-30T08:57:12.370+0200 [TRACE] Executing graph transform *terraform.OutputTransformer
+2021-06-30T08:57:12.370+0200 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2021-06-30T08:57:12.370+0200 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2021-06-30T08:57:12.370+0200 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2021-06-30T08:57:12.370+0200 [TRACE] Executing graph transform *terraform.StateTransformer
+2021-06-30T08:57:12.370+0200 [TRACE] StateTransformer: state is empty, so nothing to do
+2021-06-30T08:57:12.370+0200 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2021-06-30T08:57:12.370+0200 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021-06-30T08:57:12.370+0200 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021-06-30T08:57:12.371+0200 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2021-06-30T08:57:12.371+0200 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2021-06-30T08:57:12.371+0200 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2021-06-30T08:57:12.371+0200 [TRACE] AttachResourceConfigTransformer: attaching to "aws_instance.devops_web_01" (*terraform.NodeValidatableResource) config from main.tf:9,1-40
+2021-06-30T08:57:12.371+0200 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to aws_instance.devops_web_01
+2021-06-30T08:57:12.371+0200 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2021-06-30T08:57:12.371+0200 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2021-06-30T08:57:12.371+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2021-06-30T08:57:12.371+0200 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/aws\"]" provider configuration from main.tf:1,1-15
+2021-06-30T08:57:12.371+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:12.371+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2021-06-30T08:57:12.371+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2021-06-30T08:57:12.371+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2021-06-30T08:57:12.372+0200 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/aws"] serving aws_instance.devops_web_01
+2021-06-30T08:57:12.372+0200 [DEBUG] ProviderTransformer: "aws_instance.devops_web_01" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2021-06-30T08:57:12.372+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:12.372+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2021-06-30T08:57:12.372+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2021-06-30T08:57:12.372+0200 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:12.372+0200 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2021-06-30T08:57:12.372+0200 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2021-06-30T08:57:12.372+0200 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2021-06-30T08:57:12.372+0200 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_instance.devops_web_01
+2021-06-30T08:57:12.372+0200 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/aws"]
+2021-06-30T08:57:12.372+0200 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2021-06-30T08:57:12.372+0200 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2021-06-30T08:57:12.372+0200 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2021-06-30T08:57:12.373+0200 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021-06-30T08:57:12.373+0200 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2021-06-30T08:57:12.373+0200 [DEBUG] ReferenceTransformer: "aws_instance.devops_web_01" references: [var.name]
+2021-06-30T08:57:12.373+0200 [DEBUG] ReferenceTransformer: "var.name" references: []
+2021-06-30T08:57:12.373+0200 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:12.373+0200 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2021-06-30T08:57:12.374+0200 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2021-06-30T08:57:12.374+0200 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2021-06-30T08:57:12.374+0200 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2021-06-30T08:57:12.374+0200 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021-06-30T08:57:12.374+0200 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021-06-30T08:57:12.374+0200 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2021-06-30T08:57:12.374+0200 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2021-06-30T08:57:12.374+0200 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2021-06-30T08:57:12.374+0200 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:12.374+0200 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2021-06-30T08:57:12.375+0200 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:12.375+0200 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2021-06-30T08:57:12.375+0200 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:12.375+0200 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2021-06-30T08:57:12.375+0200 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:12.375+0200 [DEBUG] Starting graph walk: walkValidate
+2021-06-30T08:57:12.376+0200 [TRACE] vertex "var.name": starting visit (*terraform.NodeRootVariable)
+2021-06-30T08:57:12.376+0200 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"]": starting visit (*terraform.NodeApplyableProvider)
+2021-06-30T08:57:12.376+0200 [DEBUG] created provider logger: level=trace
+2021-06-30T08:57:12.376+0200 [TRACE] vertex "var.name": visit complete
+2021-06-30T08:57:12.376+0200 [INFO]  provider: configuring client automatic mTLS
+2021-06-30T08:57:12.517+0200 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5]
+2021-06-30T08:57:12.517+0200 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 pid=20178
+2021-06-30T08:57:12.517+0200 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5
+2021-06-30T08:57:12.626+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: configuring server automatic mTLS: timestamp=2021-06-30T08:57:12.626+0200
+2021-06-30T08:57:12.777+0200 [DEBUG] provider.terraform-provider-aws_v3.47.0_x5: plugin address: address=/tmp/plugin750257788 network=unix timestamp=2021-06-30T08:57:12.776+0200
+2021-06-30T08:57:12.777+0200 [DEBUG] provider: using plugin: version=5
+2021-06-30T08:57:12.958+0200 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/aws\"]" provider for provider["registry.terraform.io/hashicorp/aws"]
+2021-06-30T08:57:12.958+0200 [TRACE] provider.stdio: waiting for stdio data
+2021-06-30T08:57:12.958+0200 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/aws"]: using explicit config only
+2021-06-30T08:57:12.958+0200 [TRACE] GRPCProvider: GetProviderSchema
+2021-06-30T08:57:13.305+0200 [TRACE] GRPCProvider: ValidateProviderConfig
+2021-06-30T08:57:13.616+0200 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"]": visit complete
+2021-06-30T08:57:13.616+0200 [TRACE] vertex "aws_instance.devops_web_01": starting visit (*terraform.NodeValidatableResource)
+2021-06-30T08:57:13.617+0200 [TRACE] GRPCProvider: ValidateResourceConfig
+2021-06-30T08:57:13.620+0200 [TRACE] vertex "aws_instance.devops_web_01": visit complete
+2021-06-30T08:57:13.620+0200 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2021-06-30T08:57:13.620+0200 [TRACE] GRPCProvider: Close
+2021-06-30T08:57:13.620+0200 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2021-06-30T08:57:13.620+0200 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2021-06-30T08:57:13.621+0200 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-06-30T08:57:13.629+0200 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 pid=20178
+2021-06-30T08:57:13.629+0200 [DEBUG] provider: plugin exited
+2021-06-30T08:57:13.629+0200 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"] (close)": visit complete
+2021-06-30T08:57:13.629+0200 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2021-06-30T08:57:13.629+0200 [TRACE] vertex "root": visit complete
+2021-06-30T08:57:13.629+0200 [INFO]  backend/local: plan calling Plan
+2021-06-30T08:57:13.630+0200 [INFO]  terraform: building graph: GraphTypePlan
+2021-06-30T08:57:13.630+0200 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2021-06-30T08:57:13.630+0200 [TRACE] ConfigTransformer: Starting for path:
+2021-06-30T08:57:13.630+0200 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+  ------
+2021-06-30T08:57:13.630+0200 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2021-06-30T08:57:13.630+0200 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:13.630+0200 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2021-06-30T08:57:13.630+0200 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2021-06-30T08:57:13.630+0200 [TRACE] Executing graph transform *terraform.LocalTransformer
+2021-06-30T08:57:13.630+0200 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2021-06-30T08:57:13.630+0200 [TRACE] Executing graph transform *terraform.OutputTransformer
+2021-06-30T08:57:13.630+0200 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2021-06-30T08:57:13.630+0200 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2021-06-30T08:57:13.630+0200 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2021-06-30T08:57:13.630+0200 [TRACE] Executing graph transform *terraform.StateTransformer
+2021-06-30T08:57:13.630+0200 [TRACE] StateTransformer: state is empty, so nothing to do
+2021-06-30T08:57:13.630+0200 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2021-06-30T08:57:13.630+0200 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021-06-30T08:57:13.630+0200 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021-06-30T08:57:13.630+0200 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2021-06-30T08:57:13.630+0200 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2021-06-30T08:57:13.630+0200 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2021-06-30T08:57:13.630+0200 [TRACE] AttachResourceConfigTransformer: attaching to "aws_instance.devops_web_01 (expand)" (*terraform.nodeExpandPlannableResource) config from main.tf:9,1-40
+2021-06-30T08:57:13.630+0200 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to aws_instance.devops_web_01 (expand)
+2021-06-30T08:57:13.630+0200 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2021-06-30T08:57:13.630+0200 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2021-06-30T08:57:13.630+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2021-06-30T08:57:13.630+0200 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/aws\"]" provider configuration from main.tf:1,1-15
+2021-06-30T08:57:13.631+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:13.631+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2021-06-30T08:57:13.631+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2021-06-30T08:57:13.631+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2021-06-30T08:57:13.631+0200 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/aws"] serving aws_instance.devops_web_01 (expand)
+2021-06-30T08:57:13.631+0200 [DEBUG] ProviderTransformer: "aws_instance.devops_web_01 (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2021-06-30T08:57:13.631+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:13.631+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2021-06-30T08:57:13.631+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2021-06-30T08:57:13.631+0200 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:13.631+0200 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2021-06-30T08:57:13.631+0200 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2021-06-30T08:57:13.631+0200 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2021-06-30T08:57:13.631+0200 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_instance.devops_web_01 (expand)
+2021-06-30T08:57:13.631+0200 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/aws"]
+2021-06-30T08:57:13.631+0200 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2021-06-30T08:57:13.631+0200 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2021-06-30T08:57:13.631+0200 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2021-06-30T08:57:13.631+0200 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021-06-30T08:57:13.632+0200 [DEBUG] ReferenceTransformer: "aws_instance.devops_web_01 (expand)" references: [var.name]
+2021-06-30T08:57:13.632+0200 [DEBUG] ReferenceTransformer: "var.name" references: []
+2021-06-30T08:57:13.632+0200 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2021-06-30T08:57:13.632+0200 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:13.632+0200 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2021-06-30T08:57:13.632+0200 [TRACE] AttachDependenciesTransformer: aws_instance.devops_web_01 depends on []
+2021-06-30T08:57:13.632+0200 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2021-06-30T08:57:13.632+0200 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2021-06-30T08:57:13.632+0200 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2021-06-30T08:57:13.632+0200 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021-06-30T08:57:13.632+0200 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021-06-30T08:57:13.632+0200 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2021-06-30T08:57:13.632+0200 [TRACE] ForcedCBDTransformer: "aws_instance.devops_web_01 (expand)" (*terraform.nodeExpandPlannableResource) has no CBD descendent, so skipping
+2021-06-30T08:57:13.632+0200 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2021-06-30T08:57:13.632+0200 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2021-06-30T08:57:13.632+0200 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:13.632+0200 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2021-06-30T08:57:13.632+0200 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:13.632+0200 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2021-06-30T08:57:13.633+0200 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:13.633+0200 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2021-06-30T08:57:13.633+0200 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T08:57:13.633+0200 [DEBUG] Starting graph walk: walkPlan
+2021-06-30T08:57:13.633+0200 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"]": starting visit (*terraform.NodeApplyableProvider)
+2021-06-30T08:57:13.633+0200 [DEBUG] created provider logger: level=trace
+2021-06-30T08:57:13.633+0200 [TRACE] vertex "var.name": starting visit (*terraform.NodeRootVariable)
+2021-06-30T08:57:13.634+0200 [TRACE] vertex "var.name": visit complete
+2021-06-30T08:57:13.634+0200 [INFO]  provider: configuring client automatic mTLS
+2021-06-30T08:57:13.774+0200 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5]
+2021-06-30T08:57:13.775+0200 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 pid=20187
+2021-06-30T08:57:13.775+0200 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5
+2021-06-30T08:57:13.912+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: configuring server automatic mTLS: timestamp=2021-06-30T08:57:13.912+0200
+2021-06-30T08:57:14.045+0200 [DEBUG] provider.terraform-provider-aws_v3.47.0_x5: plugin address: address=/tmp/plugin575255488 network=unix timestamp=2021-06-30T08:57:14.045+0200
+2021-06-30T08:57:14.045+0200 [DEBUG] provider: using plugin: version=5
+2021-06-30T08:57:14.233+0200 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/aws\"]" provider for provider["registry.terraform.io/hashicorp/aws"]
+2021-06-30T08:57:14.233+0200 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/aws"]: using explicit config only
+2021-06-30T08:57:14.233+0200 [TRACE] GRPCProvider: GetProviderSchema
+2021-06-30T08:57:14.233+0200 [TRACE] provider.stdio: waiting for stdio data
+2021-06-30T08:57:14.559+0200 [TRACE] GRPCProvider: ValidateProviderConfig
+2021-06-30T08:57:14.944+0200 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/hashicorp/aws\"]" changed the config value, but that value is unused
+2021-06-30T08:57:14.944+0200 [TRACE] GRPCProvider: ConfigureProvider
+2021-06-30T08:57:14.950+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:14 [INFO] AWS Auth provider used: "EnvProvider": timestamp=2021-06-30T08:57:14.950+0200
+2021-06-30T08:57:14.952+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:14 [DEBUG] Trying to get account information via sts:GetCallerIdentity: timestamp=2021-06-30T08:57:14.952+0200
+2021-06-30T08:57:14.954+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:14 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=50dd5a16bab6d049496761477fa2543073fb2f1b9c4f864ac9ad999a9be8495f
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T065714Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T08:57:14.953+0200
+2021-06-30T08:57:15.471+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:15 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 06:57:15 GMT
+X-Amzn-Requestid: e19674b5-cd20-4e7f-b648-0eef2cc91785
+
+
+-----------------------------------------------------: timestamp=2021-06-30T08:57:15.471+0200
+2021-06-30T08:57:15.471+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:15 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>e19674b5-cd20-4e7f-b648-0eef2cc91785</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T08:57:15.471+0200
+2021-06-30T08:57:15.471+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:15 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 0/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: e19674b5-cd20-4e7f-b648-0eef2cc91785: timestamp=2021-06-30T08:57:15.471+0200
+2021-06-30T08:57:15.505+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:15 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 1: timestamp=2021-06-30T08:57:15.505+0200
+2021-06-30T08:57:15.506+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:15 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=ce93e0079f45608118717fcf95f54859e56336d8e34dd655017a5439ff0140ba
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T065715Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T08:57:15.506+0200
+2021-06-30T08:57:15.914+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:15 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 06:57:15 GMT
+X-Amzn-Requestid: 667ac775-34f3-40a0-a0f9-3c8b92c41b7f
+
+
+-----------------------------------------------------: timestamp=2021-06-30T08:57:15.914+0200
+2021-06-30T08:57:15.914+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:15 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>667ac775-34f3-40a0-a0f9-3c8b92c41b7f</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T08:57:15.914+0200
+2021-06-30T08:57:15.914+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:15 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 1/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: 667ac775-34f3-40a0-a0f9-3c8b92c41b7f: timestamp=2021-06-30T08:57:15.914+0200
+2021-06-30T08:57:16.022+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:16 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 2: timestamp=2021-06-30T08:57:16.022+0200
+2021-06-30T08:57:16.023+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:16 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=7dc4cc835b9a296498b85007aceee45422df8f7500f31b789592578b196c7ec6
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T065716Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T08:57:16.023+0200
+2021-06-30T08:57:16.430+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:16 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 06:57:15 GMT
+X-Amzn-Requestid: c7b69a21-6bac-42c9-b106-0ec4a20e9815
+
+
+-----------------------------------------------------: timestamp=2021-06-30T08:57:16.430+0200
+2021-06-30T08:57:16.430+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:16 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>c7b69a21-6bac-42c9-b106-0ec4a20e9815</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T08:57:16.430+0200
+2021-06-30T08:57:16.430+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:16 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 2/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: c7b69a21-6bac-42c9-b106-0ec4a20e9815: timestamp=2021-06-30T08:57:16.430+0200
+2021-06-30T08:57:16.647+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:16 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 3: timestamp=2021-06-30T08:57:16.646+0200
+2021-06-30T08:57:16.647+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:16 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=7dc4cc835b9a296498b85007aceee45422df8f7500f31b789592578b196c7ec6
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T065716Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T08:57:16.647+0200
+2021-06-30T08:57:17.074+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:17 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 06:57:16 GMT
+X-Amzn-Requestid: 0e76b3a0-c893-43e7-8f8b-707a342e4f32
+
+
+-----------------------------------------------------: timestamp=2021-06-30T08:57:17.074+0200
+2021-06-30T08:57:17.075+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:17 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>0e76b3a0-c893-43e7-8f8b-707a342e4f32</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T08:57:17.075+0200
+2021-06-30T08:57:17.075+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:17 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 3/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: 0e76b3a0-c893-43e7-8f8b-707a342e4f32: timestamp=2021-06-30T08:57:17.075+0200
+2021-06-30T08:57:17.522+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:17 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 4: timestamp=2021-06-30T08:57:17.522+0200
+2021-06-30T08:57:17.522+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:17 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=4b280c09415a569ae6fad441b8a886c8545e6a2deec0b23993aecf3f2819f37a
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T065717Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T08:57:17.522+0200
+2021-06-30T08:57:17.927+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:17 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 06:57:16 GMT
+X-Amzn-Requestid: 7c077218-e6a1-4d7a-acb0-f5244dab69b9
+
+
+-----------------------------------------------------: timestamp=2021-06-30T08:57:17.926+0200
+2021-06-30T08:57:17.927+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:17 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>7c077218-e6a1-4d7a-acb0-f5244dab69b9</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T08:57:17.926+0200
+2021-06-30T08:57:17.927+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:17 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 4/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: 7c077218-e6a1-4d7a-acb0-f5244dab69b9: timestamp=2021-06-30T08:57:17.927+0200
+2021-06-30T08:57:18.579+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:18 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 5: timestamp=2021-06-30T08:57:18.578+0200
+2021-06-30T08:57:18.579+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:18 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=71144be31a2a86ad744a443a9d8de48fbc6223e516d228ae4357c44f793a72ff
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T065718Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T08:57:18.579+0200
+2021-06-30T08:57:18.634+0200 [TRACE] dag/walk: vertex "aws_instance.devops_web_01 (expand)" is waiting for "provider[\"registry.terraform.io/hashicorp/aws\"]"
+2021-06-30T08:57:18.634+0200 [TRACE] dag/walk: vertex "provider[\"registry.terraform.io/hashicorp/aws\"] (close)" is waiting for "aws_instance.devops_web_01 (expand)"
+2021-06-30T08:57:18.634+0200 [TRACE] dag/walk: vertex "root" is waiting for "provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+2021-06-30T08:57:18.635+0200 [TRACE] dag/walk: vertex "meta.count-boundary (EachMode fixup)" is waiting for "aws_instance.devops_web_01 (expand)"
+2021-06-30T08:57:18.986+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:18 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 06:57:18 GMT
+X-Amzn-Requestid: 463fadaa-6983-426c-8af6-25565b88181d
+
+
+-----------------------------------------------------: timestamp=2021-06-30T08:57:18.986+0200
+2021-06-30T08:57:18.986+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:18 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>463fadaa-6983-426c-8af6-25565b88181d</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T08:57:18.986+0200
+2021-06-30T08:57:18.987+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:18 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 5/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: 463fadaa-6983-426c-8af6-25565b88181d: timestamp=2021-06-30T08:57:18.986+0200
+2021-06-30T08:57:20.551+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:20 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 6: timestamp=2021-06-30T08:57:20.551+0200
+2021-06-30T08:57:20.552+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:20 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=a0c19482262fd763236e58a441096021be3c4aa66864e41b034c6b1a181fb70e
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T065720Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T08:57:20.551+0200
+2021-06-30T08:57:20.966+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:20 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 06:57:20 GMT
+X-Amzn-Requestid: 557cfe12-8525-4296-b636-737d922b5a82
+
+
+-----------------------------------------------------: timestamp=2021-06-30T08:57:20.966+0200
+2021-06-30T08:57:20.966+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:20 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>557cfe12-8525-4296-b636-737d922b5a82</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T08:57:20.966+0200
+2021-06-30T08:57:20.966+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:20 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 6/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: 557cfe12-8525-4296-b636-737d922b5a82: timestamp=2021-06-30T08:57:20.966+0200
+2021-06-30T08:57:23.400+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:23 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 7: timestamp=2021-06-30T08:57:23.400+0200
+2021-06-30T08:57:23.401+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:23 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=ad8c3ca4e2bf0174c857c4f879cd97f7551d8d93c67041d8a8a417462fd92f3c
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T065723Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T08:57:23.401+0200
+2021-06-30T08:57:23.635+0200 [TRACE] dag/walk: vertex "meta.count-boundary (EachMode fixup)" is waiting for "aws_instance.devops_web_01 (expand)"
+2021-06-30T08:57:23.635+0200 [TRACE] dag/walk: vertex "provider[\"registry.terraform.io/hashicorp/aws\"] (close)" is waiting for "aws_instance.devops_web_01 (expand)"
+2021-06-30T08:57:23.636+0200 [TRACE] dag/walk: vertex "root" is waiting for "provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+2021-06-30T08:57:23.636+0200 [TRACE] dag/walk: vertex "aws_instance.devops_web_01 (expand)" is waiting for "provider[\"registry.terraform.io/hashicorp/aws\"]"
+2021-06-30T08:57:23.818+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:23 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 06:57:23 GMT
+X-Amzn-Requestid: 3ebaaf5a-5fe1-4fd7-8839-b966a6c3fcfa
+
+
+-----------------------------------------------------: timestamp=2021-06-30T08:57:23.818+0200
+2021-06-30T08:57:23.818+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:23 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>3ebaaf5a-5fe1-4fd7-8839-b966a6c3fcfa</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T08:57:23.818+0200
+2021-06-30T08:57:23.818+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:23 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 7/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: 3ebaaf5a-5fe1-4fd7-8839-b966a6c3fcfa: timestamp=2021-06-30T08:57:23.818+0200
+2021-06-30T08:57:28.218+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:28 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 8: timestamp=2021-06-30T08:57:28.218+0200
+2021-06-30T08:57:28.219+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:28 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=4ca1cac29cbbb407863852e590793c8e4009a9f18457d8d8847fb9f29744639b
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T065728Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T08:57:28.219+0200
+2021-06-30T08:57:28.626+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:28 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 06:57:28 GMT
+X-Amzn-Requestid: 8f6cedbe-a49c-4971-b8af-35928c4d86ec
+
+
+-----------------------------------------------------: timestamp=2021-06-30T08:57:28.626+0200
+2021-06-30T08:57:28.626+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:28 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>8f6cedbe-a49c-4971-b8af-35928c4d86ec</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T08:57:28.626+0200
+2021-06-30T08:57:28.626+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 08:57:28 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 8/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: 8f6cedbe-a49c-4971-b8af-35928c4d86ec: timestamp=2021-06-30T08:57:28.626+0200
+2021-06-30T08:57:28.637+0200 [TRACE] dag/walk: vertex "provider[\"registry.terraform.io/hashicorp/aws\"] (close)" is waiting for "aws_instance.devops_web_01 (expand)"
+2021-06-30T08:57:28.637+0200 [TRACE] dag/walk: vertex "aws_instance.devops_web_01 (expand)" is waiting for "provider[\"registry.terraform.io/hashicorp/aws\"]"
+2021-06-30T08:57:28.637+0200 [TRACE] dag/walk: vertex "root" is waiting for "provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+2021-06-30T08:57:28.637+0200 [TRACE] dag/walk: vertex "meta.count-boundary (EachMode fixup)" is waiting for "aws_instance.devops_web_01 (expand)"
+2021-06-30T08:57:33.637+0200 [TRACE] dag/walk: vertex "meta.count-boundary (EachMode fixup)" is waiting for "aws_instance.devops_web_01 (expand)"
+2021-06-30T08:57:33.637+0200 [TRACE] dag/walk: vertex "aws_instance.devops_web_01 (expand)" is waiting for "provider[\"registry.terraform.io/hashicorp/aws\"]"
+2021-06-30T08:57:33.638+0200 [TRACE] dag/walk: vertex "root" is waiting for "provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+2021-06-30T08:57:33.638+0200 [TRACE] dag/walk: vertex "provider[\"registry.terraform.io/hashicorp/aws\"] (close)" is waiting for "aws_instance.devops_web_01 (expand)"
+2021-06-30T08:57:36.006+0200 [TRACE] backend/local: waiting for the running operation to stop
+2021-06-30T08:57:36.006+0200 [WARN]  terraform: Stop called, initiating interrupt sequence
+2021-06-30T08:57:36.006+0200 [WARN]  terraform: run context exists, stopping
+2021-06-30T08:57:36.006+0200 [INFO]  terraform: waiting for graceful stop to complete
+2021-06-30T08:57:36.006+0200 [TRACE] Context: requesting providers and provisioners to gracefully stop
+2021-06-30T08:57:36.006+0200 [TRACE] GRPCProvider: Stop
+2021-06-30T08:57:36.009+0200 [TRACE] provider.terraform-provider-aws_v3.47.0_x5: plugin received interrupt signal, ignoring: count=1 timestamp=2021-06-30T08:57:36.008+0200
+2021-06-30T08:57:36.997+0200 [WARN]  running operation was forcefully canceled
+2021-06-30T08:57:36.997+0200 [INFO]  backend/local: plan operation was force-cancelled by interrupt
+2021-06-30T08:57:36.997+0200 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2021-06-30T08:57:36.998+0200 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2021-06-30T08:57:37.001+0200 [TRACE] provider.terraform-provider-aws_v3.47.0_x5: plugin received interrupt signal, ignoring: count=2 timestamp=2021-06-30T08:57:36.997+0200
+2021-06-30T08:57:37.002+0200 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-06-30T08:57:37.002+0200 [ERROR] plugin.(*GRPCProvider).ConfigureProvider: error="rpc error: code = Unavailable desc = transport is closing"
+2021-06-30T08:57:37.003+0200 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"]": visit complete
+2021-06-30T08:57:37.003+0200 [TRACE] dag/walk: upstream of "aws_instance.devops_web_01 (expand)" errored, so skipping
+2021-06-30T08:57:37.003+0200 [TRACE] dag/walk: upstream of "meta.count-boundary (EachMode fixup)" errored, so skipping
+2021-06-30T08:57:37.003+0200 [TRACE] dag/walk: upstream of "provider[\"registry.terraform.io/hashicorp/aws\"] (close)" errored, so skipping
+2021-06-30T08:57:37.004+0200 [TRACE] dag/walk: upstream of "root" errored, so skipping
+2021-06-30T08:57:37.004+0200 [WARN]  terraform: stop complete
+2021-06-30T08:57:37.033+0200 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 pid=20187
+2021-06-30T08:57:37.033+0200 [DEBUG] provider: plugin exited
+2021-06-30T09:24:48.861+0200 [DEBUG] Adding temp file log sink: /tmp/terraform-log477360568
+2021-06-30T09:24:48.861+0200 [INFO]  Terraform version: 1.0.0
+2021-06-30T09:24:48.861+0200 [INFO]  Go runtime version: go1.16.4
+2021-06-30T09:24:48.861+0200 [INFO]  CLI args: []string{"/usr/local/bin/terraform", "plan"}
+2021-06-30T09:24:48.861+0200 [TRACE] Stdout is a terminal of width 151
+2021-06-30T09:24:48.861+0200 [TRACE] Stderr is a terminal of width 151
+2021-06-30T09:24:48.861+0200 [TRACE] Stdin is a terminal
+2021-06-30T09:24:48.861+0200 [DEBUG] Attempting to open CLI config file: /home/maroua/.terraformrc
+2021-06-30T09:24:48.861+0200 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021-06-30T09:24:48.861+0200 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021-06-30T09:24:48.861+0200 [DEBUG] ignoring non-existing provider search directory /home/maroua/.terraform.d/plugins
+2021-06-30T09:24:48.861+0200 [DEBUG] ignoring non-existing provider search directory /home/maroua/.local/share/terraform/plugins
+2021-06-30T09:24:48.861+0200 [DEBUG] ignoring non-existing provider search directory /usr/share/ubuntu/terraform/plugins
+2021-06-30T09:24:48.861+0200 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2021-06-30T09:24:48.861+0200 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2021-06-30T09:24:48.861+0200 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2021-06-30T09:24:48.862+0200 [INFO]  CLI command args: []string{"plan"}
+2021-06-30T09:24:48.862+0200 [ERROR] Checkpoint error: open /home/maroua/.terraform.d/checkpoint_signature: permission denied
+2021-06-30T09:24:48.863+0200 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2021-06-30T09:24:48.863+0200 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2021-06-30T09:24:48.863+0200 [DEBUG] New state was assigned lineage "afb7f6df-1163-dfca-cef8-cc7c304e1a55"
+2021-06-30T09:24:48.863+0200 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2021-06-30T09:24:48.863+0200 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2021-06-30T09:24:48.863+0200 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2021-06-30T09:24:48.864+0200 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/hashicorp/aws v3.47.0 for linux_amd64 at .terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64
+2021-06-30T09:24:48.864+0200 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64 as a candidate package for registry.terraform.io/hashicorp/aws 3.47.0
+2021-06-30T09:24:50.044+0200 [DEBUG] checking for provisioner in "."
+2021-06-30T09:24:50.044+0200 [DEBUG] checking for provisioner in "/usr/local/bin"
+2021-06-30T09:24:50.044+0200 [INFO]  Failed to read plugin lock file .terraform/plugins/linux_amd64/lock.json: open .terraform/plugins/linux_amd64/lock.json: no such file or directory
+2021-06-30T09:24:50.044+0200 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2021-06-30T09:24:50.044+0200 [INFO]  backend/local: starting Plan operation
+2021-06-30T09:24:50.044+0200 [TRACE] backend/local: requesting state manager for workspace "default"
+2021-06-30T09:24:50.044+0200 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2021-06-30T09:24:50.045+0200 [TRACE] backend/local: requesting state lock for workspace "default"
+2021-06-30T09:24:50.045+0200 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2021-06-30T09:24:50.045+0200 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2021-06-30T09:24:50.045+0200 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2021-06-30T09:24:50.045+0200 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2021-06-30T09:24:50.045+0200 [TRACE] backend/local: reading remote state for workspace "default"
+2021-06-30T09:24:50.045+0200 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2021-06-30T09:24:50.045+0200 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2021-06-30T09:24:50.045+0200 [TRACE] statemgr.Filesystem: read nil snapshot
+2021-06-30T09:24:50.045+0200 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2021-06-30T09:24:50.045+0200 [TRACE] backend/local: building context for current working directory
+2021-06-30T09:24:50.045+0200 [DEBUG] backend/local: will prompt for input of unset required variables [name]
+2021-06-30T09:24:50.045+0200 [DEBUG] command: asking for input: "var.name"
+2021-06-30T09:24:52.834+0200 [TRACE] terraform.NewContext: starting
+2021-06-30T09:24:52.834+0200 [TRACE] terraform.NewContext: loading provider schemas
+2021-06-30T09:24:52.834+0200 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/hashicorp/aws"
+2021-06-30T09:24:52.834+0200 [DEBUG] created provider logger: level=trace
+2021-06-30T09:24:52.834+0200 [INFO]  provider: configuring client automatic mTLS
+2021-06-30T09:24:52.905+0200 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5]
+2021-06-30T09:24:52.905+0200 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 pid=20984
+2021-06-30T09:24:52.905+0200 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5
+2021-06-30T09:24:52.968+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: configuring server automatic mTLS: timestamp=2021-06-30T09:24:52.967+0200
+2021-06-30T09:24:53.021+0200 [DEBUG] provider.terraform-provider-aws_v3.47.0_x5: plugin address: address=/tmp/plugin182167531 network=unix timestamp=2021-06-30T09:24:53.021+0200
+2021-06-30T09:24:53.021+0200 [DEBUG] provider: using plugin: version=5
+2021-06-30T09:24:53.106+0200 [TRACE] GRPCProvider: GetProviderSchema
+2021-06-30T09:24:53.106+0200 [TRACE] provider.stdio: waiting for stdio data
+2021-06-30T09:24:53.241+0200 [TRACE] GRPCProvider: Close
+2021-06-30T09:24:53.242+0200 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-06-30T09:24:53.247+0200 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 pid=20984
+2021-06-30T09:24:53.247+0200 [DEBUG] provider: plugin exited
+2021-06-30T09:24:53.247+0200 [TRACE] terraform.NewContext: complete
+2021-06-30T09:24:53.247+0200 [TRACE] backend/local: finished building terraform.Context
+2021-06-30T09:24:53.247+0200 [TRACE] backend/local: requesting interactive input, if necessary
+2021-06-30T09:24:53.247+0200 [TRACE] Context.Input: Prompting for provider arguments
+2021-06-30T09:24:53.247+0200 [TRACE] Context.Input: Provider provider.aws declared at main.tf:1,1-15
+2021-06-30T09:24:53.247+0200 [TRACE] Context.Input: Input for provider.aws: map[string]cty.Value{}
+2021-06-30T09:24:53.247+0200 [TRACE] backend/local: running validation operation
+2021-06-30T09:24:53.247+0200 [INFO]  terraform: building graph: GraphTypeValidate
+2021-06-30T09:24:53.247+0200 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2021-06-30T09:24:53.247+0200 [TRACE] ConfigTransformer: Starting for path:
+2021-06-30T09:24:53.247+0200 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+  ------
+2021-06-30T09:24:53.247+0200 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2021-06-30T09:24:53.247+0200 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.247+0200 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2021-06-30T09:24:53.247+0200 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2021-06-30T09:24:53.247+0200 [TRACE] Executing graph transform *terraform.LocalTransformer
+2021-06-30T09:24:53.247+0200 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2021-06-30T09:24:53.247+0200 [TRACE] Executing graph transform *terraform.OutputTransformer
+2021-06-30T09:24:53.247+0200 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2021-06-30T09:24:53.247+0200 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2021-06-30T09:24:53.247+0200 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2021-06-30T09:24:53.247+0200 [TRACE] Executing graph transform *terraform.StateTransformer
+2021-06-30T09:24:53.247+0200 [TRACE] StateTransformer: state is empty, so nothing to do
+2021-06-30T09:24:53.247+0200 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2021-06-30T09:24:53.247+0200 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021-06-30T09:24:53.247+0200 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021-06-30T09:24:53.247+0200 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2021-06-30T09:24:53.247+0200 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2021-06-30T09:24:53.247+0200 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2021-06-30T09:24:53.247+0200 [TRACE] AttachResourceConfigTransformer: attaching to "aws_instance.devops_web_01" (*terraform.NodeValidatableResource) config from main.tf:9,1-40
+2021-06-30T09:24:53.247+0200 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to aws_instance.devops_web_01
+2021-06-30T09:24:53.247+0200 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2021-06-30T09:24:53.248+0200 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2021-06-30T09:24:53.248+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2021-06-30T09:24:53.248+0200 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/aws\"]" provider configuration from main.tf:1,1-15
+2021-06-30T09:24:53.248+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.248+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2021-06-30T09:24:53.248+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2021-06-30T09:24:53.248+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2021-06-30T09:24:53.248+0200 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/aws"] serving aws_instance.devops_web_01
+2021-06-30T09:24:53.248+0200 [DEBUG] ProviderTransformer: "aws_instance.devops_web_01" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2021-06-30T09:24:53.248+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.248+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2021-06-30T09:24:53.248+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2021-06-30T09:24:53.248+0200 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.248+0200 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2021-06-30T09:24:53.248+0200 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2021-06-30T09:24:53.248+0200 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2021-06-30T09:24:53.248+0200 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_instance.devops_web_01
+2021-06-30T09:24:53.248+0200 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/aws"]
+2021-06-30T09:24:53.248+0200 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2021-06-30T09:24:53.248+0200 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2021-06-30T09:24:53.248+0200 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2021-06-30T09:24:53.248+0200 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021-06-30T09:24:53.248+0200 [DEBUG] ReferenceTransformer: "aws_instance.devops_web_01" references: [var.name]
+2021-06-30T09:24:53.248+0200 [DEBUG] ReferenceTransformer: "var.name" references: []
+2021-06-30T09:24:53.248+0200 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2021-06-30T09:24:53.248+0200 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.248+0200 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2021-06-30T09:24:53.248+0200 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2021-06-30T09:24:53.248+0200 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2021-06-30T09:24:53.248+0200 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2021-06-30T09:24:53.248+0200 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021-06-30T09:24:53.248+0200 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021-06-30T09:24:53.248+0200 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2021-06-30T09:24:53.248+0200 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2021-06-30T09:24:53.248+0200 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2021-06-30T09:24:53.248+0200 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.248+0200 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2021-06-30T09:24:53.249+0200 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.249+0200 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2021-06-30T09:24:53.249+0200 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.249+0200 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2021-06-30T09:24:53.249+0200 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.devops_web_01 - *terraform.NodeValidatableResource
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.249+0200 [DEBUG] Starting graph walk: walkValidate
+2021-06-30T09:24:53.249+0200 [TRACE] vertex "var.name": starting visit (*terraform.NodeRootVariable)
+2021-06-30T09:24:53.249+0200 [TRACE] vertex "var.name": visit complete
+2021-06-30T09:24:53.249+0200 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"]": starting visit (*terraform.NodeApplyableProvider)
+2021-06-30T09:24:53.249+0200 [DEBUG] created provider logger: level=trace
+2021-06-30T09:24:53.249+0200 [INFO]  provider: configuring client automatic mTLS
+2021-06-30T09:24:53.307+0200 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5]
+2021-06-30T09:24:53.308+0200 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 pid=20994
+2021-06-30T09:24:53.308+0200 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5
+2021-06-30T09:24:53.364+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: configuring server automatic mTLS: timestamp=2021-06-30T09:24:53.364+0200
+2021-06-30T09:24:53.418+0200 [DEBUG] provider.terraform-provider-aws_v3.47.0_x5: plugin address: network=unix address=/tmp/plugin222792309 timestamp=2021-06-30T09:24:53.418+0200
+2021-06-30T09:24:53.418+0200 [DEBUG] provider: using plugin: version=5
+2021-06-30T09:24:53.494+0200 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/aws\"]" provider for provider["registry.terraform.io/hashicorp/aws"]
+2021-06-30T09:24:53.494+0200 [TRACE] provider.stdio: waiting for stdio data
+2021-06-30T09:24:53.494+0200 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/aws"]: using explicit config only
+2021-06-30T09:24:53.494+0200 [TRACE] GRPCProvider: GetProviderSchema
+2021-06-30T09:24:53.624+0200 [TRACE] GRPCProvider: ValidateProviderConfig
+2021-06-30T09:24:53.755+0200 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"]": visit complete
+2021-06-30T09:24:53.755+0200 [TRACE] vertex "aws_instance.devops_web_01": starting visit (*terraform.NodeValidatableResource)
+2021-06-30T09:24:53.756+0200 [TRACE] GRPCProvider: ValidateResourceConfig
+2021-06-30T09:24:53.757+0200 [TRACE] vertex "aws_instance.devops_web_01": visit complete
+2021-06-30T09:24:53.757+0200 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2021-06-30T09:24:53.757+0200 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2021-06-30T09:24:53.757+0200 [TRACE] GRPCProvider: Close
+2021-06-30T09:24:53.757+0200 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2021-06-30T09:24:53.758+0200 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-06-30T09:24:53.762+0200 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 pid=20994
+2021-06-30T09:24:53.762+0200 [DEBUG] provider: plugin exited
+2021-06-30T09:24:53.762+0200 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"] (close)": visit complete
+2021-06-30T09:24:53.763+0200 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2021-06-30T09:24:53.763+0200 [TRACE] vertex "root": visit complete
+2021-06-30T09:24:53.763+0200 [INFO]  backend/local: plan calling Plan
+2021-06-30T09:24:53.763+0200 [INFO]  terraform: building graph: GraphTypePlan
+2021-06-30T09:24:53.763+0200 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2021-06-30T09:24:53.763+0200 [TRACE] ConfigTransformer: Starting for path:
+2021-06-30T09:24:53.763+0200 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+  ------
+2021-06-30T09:24:53.763+0200 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2021-06-30T09:24:53.763+0200 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.763+0200 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2021-06-30T09:24:53.763+0200 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2021-06-30T09:24:53.763+0200 [TRACE] Executing graph transform *terraform.LocalTransformer
+2021-06-30T09:24:53.763+0200 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2021-06-30T09:24:53.763+0200 [TRACE] Executing graph transform *terraform.OutputTransformer
+2021-06-30T09:24:53.763+0200 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2021-06-30T09:24:53.763+0200 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2021-06-30T09:24:53.763+0200 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2021-06-30T09:24:53.763+0200 [TRACE] Executing graph transform *terraform.StateTransformer
+2021-06-30T09:24:53.763+0200 [TRACE] StateTransformer: state is empty, so nothing to do
+2021-06-30T09:24:53.763+0200 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2021-06-30T09:24:53.763+0200 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021-06-30T09:24:53.763+0200 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021-06-30T09:24:53.763+0200 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2021-06-30T09:24:53.763+0200 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2021-06-30T09:24:53.763+0200 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2021-06-30T09:24:53.763+0200 [TRACE] AttachResourceConfigTransformer: attaching to "aws_instance.devops_web_01 (expand)" (*terraform.nodeExpandPlannableResource) config from main.tf:9,1-40
+2021-06-30T09:24:53.763+0200 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to aws_instance.devops_web_01 (expand)
+2021-06-30T09:24:53.763+0200 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2021-06-30T09:24:53.763+0200 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2021-06-30T09:24:53.763+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2021-06-30T09:24:53.763+0200 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/hashicorp/aws\"]" provider configuration from main.tf:1,1-15
+2021-06-30T09:24:53.763+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.763+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2021-06-30T09:24:53.763+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2021-06-30T09:24:53.763+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2021-06-30T09:24:53.764+0200 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/hashicorp/aws"] serving aws_instance.devops_web_01 (expand)
+2021-06-30T09:24:53.764+0200 [DEBUG] ProviderTransformer: "aws_instance.devops_web_01 (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2021-06-30T09:24:53.764+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.764+0200 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2021-06-30T09:24:53.764+0200 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2021-06-30T09:24:53.764+0200 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.764+0200 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2021-06-30T09:24:53.764+0200 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2021-06-30T09:24:53.764+0200 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2021-06-30T09:24:53.764+0200 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_instance.devops_web_01 (expand)
+2021-06-30T09:24:53.764+0200 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/hashicorp/aws"]
+2021-06-30T09:24:53.764+0200 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2021-06-30T09:24:53.764+0200 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2021-06-30T09:24:53.764+0200 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2021-06-30T09:24:53.764+0200 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021-06-30T09:24:53.764+0200 [DEBUG] ReferenceTransformer: "aws_instance.devops_web_01 (expand)" references: [var.name]
+2021-06-30T09:24:53.764+0200 [DEBUG] ReferenceTransformer: "var.name" references: []
+2021-06-30T09:24:53.764+0200 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2021-06-30T09:24:53.764+0200 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.764+0200 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2021-06-30T09:24:53.764+0200 [TRACE] AttachDependenciesTransformer: aws_instance.devops_web_01 depends on []
+2021-06-30T09:24:53.764+0200 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2021-06-30T09:24:53.764+0200 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2021-06-30T09:24:53.764+0200 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2021-06-30T09:24:53.764+0200 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021-06-30T09:24:53.764+0200 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021-06-30T09:24:53.765+0200 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2021-06-30T09:24:53.765+0200 [TRACE] ForcedCBDTransformer: "aws_instance.devops_web_01 (expand)" (*terraform.nodeExpandPlannableResource) has no CBD descendent, so skipping
+2021-06-30T09:24:53.765+0200 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2021-06-30T09:24:53.765+0200 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2021-06-30T09:24:53.765+0200 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.765+0200 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2021-06-30T09:24:53.765+0200 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.765+0200 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2021-06-30T09:24:53.765+0200 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.765+0200 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2021-06-30T09:24:53.765+0200 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+    var.name - *terraform.NodeRootVariable
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+  provider["registry.terraform.io/hashicorp/aws"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+    aws_instance.devops_web_01 (expand) - *terraform.nodeExpandPlannableResource
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/hashicorp/aws"] (close) - *terraform.graphNodeCloseProvider
+  var.name - *terraform.NodeRootVariable
+  ------
+2021-06-30T09:24:53.765+0200 [DEBUG] Starting graph walk: walkPlan
+2021-06-30T09:24:53.765+0200 [TRACE] vertex "var.name": starting visit (*terraform.NodeRootVariable)
+2021-06-30T09:24:53.765+0200 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"]": starting visit (*terraform.NodeApplyableProvider)
+2021-06-30T09:24:53.765+0200 [TRACE] vertex "var.name": visit complete
+2021-06-30T09:24:53.765+0200 [DEBUG] created provider logger: level=trace
+2021-06-30T09:24:53.765+0200 [INFO]  provider: configuring client automatic mTLS
+2021-06-30T09:24:53.825+0200 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 args=[.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5]
+2021-06-30T09:24:53.826+0200 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 pid=21003
+2021-06-30T09:24:53.826+0200 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5
+2021-06-30T09:24:53.883+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: configuring server automatic mTLS: timestamp=2021-06-30T09:24:53.882+0200
+2021-06-30T09:24:53.938+0200 [DEBUG] provider: using plugin: version=5
+2021-06-30T09:24:53.938+0200 [DEBUG] provider.terraform-provider-aws_v3.47.0_x5: plugin address: address=/tmp/plugin051017111 network=unix timestamp=2021-06-30T09:24:53.938+0200
+2021-06-30T09:24:54.020+0200 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/hashicorp/aws\"]" provider for provider["registry.terraform.io/hashicorp/aws"]
+2021-06-30T09:24:54.020+0200 [TRACE] provider.stdio: waiting for stdio data
+2021-06-30T09:24:54.020+0200 [TRACE] buildProviderConfig for provider["registry.terraform.io/hashicorp/aws"]: using explicit config only
+2021-06-30T09:24:54.020+0200 [TRACE] GRPCProvider: GetProviderSchema
+2021-06-30T09:24:54.150+0200 [TRACE] GRPCProvider: ValidateProviderConfig
+2021-06-30T09:24:54.281+0200 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/hashicorp/aws\"]" changed the config value, but that value is unused
+2021-06-30T09:24:54.281+0200 [TRACE] GRPCProvider: ConfigureProvider
+2021-06-30T09:24:54.283+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:54 [INFO] AWS Auth provider used: "EnvProvider": timestamp=2021-06-30T09:24:54.283+0200
+2021-06-30T09:24:54.284+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:54 [DEBUG] Trying to get account information via sts:GetCallerIdentity: timestamp=2021-06-30T09:24:54.284+0200
+2021-06-30T09:24:54.284+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:54 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=c839f37fdbb464d84e1a9695e29a9b3a98e39924eb4a6417ed5d93183fe842ff
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T072454Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T09:24:54.284+0200
+2021-06-30T09:24:54.756+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:54 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 07:24:54 GMT
+X-Amzn-Requestid: aa4fd28b-3205-4037-a07f-8cfd88078aac
+
+
+-----------------------------------------------------: timestamp=2021-06-30T09:24:54.755+0200
+2021-06-30T09:24:54.756+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:54 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>aa4fd28b-3205-4037-a07f-8cfd88078aac</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T09:24:54.755+0200
+2021-06-30T09:24:54.756+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:54 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 0/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: aa4fd28b-3205-4037-a07f-8cfd88078aac: timestamp=2021-06-30T09:24:54.756+0200
+2021-06-30T09:24:54.801+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:54 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 1: timestamp=2021-06-30T09:24:54.800+0200
+2021-06-30T09:24:54.802+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:54 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=c839f37fdbb464d84e1a9695e29a9b3a98e39924eb4a6417ed5d93183fe842ff
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T072454Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T09:24:54.802+0200
+2021-06-30T09:24:55.203+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:55 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 07:24:54 GMT
+X-Amzn-Requestid: 8812f228-8845-4970-a8af-889cb8a6b9c2
+
+
+-----------------------------------------------------: timestamp=2021-06-30T09:24:55.203+0200
+2021-06-30T09:24:55.203+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:55 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>8812f228-8845-4970-a8af-889cb8a6b9c2</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T09:24:55.203+0200
+2021-06-30T09:24:55.203+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:55 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 1/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: 8812f228-8845-4970-a8af-889cb8a6b9c2: timestamp=2021-06-30T09:24:55.203+0200
+2021-06-30T09:24:55.291+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:55 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 2: timestamp=2021-06-30T09:24:55.291+0200
+2021-06-30T09:24:55.292+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:55 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=75d0fa2b9f35ca8630e3cf2d0538547e8bad25c50ab4d0876e9f2763684f6b7e
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T072455Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T09:24:55.292+0200
+2021-06-30T09:24:55.716+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:55 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 07:24:54 GMT
+X-Amzn-Requestid: cb5e5a72-8adb-49fe-81e4-33f8ad56499a
+
+
+-----------------------------------------------------: timestamp=2021-06-30T09:24:55.716+0200
+2021-06-30T09:24:55.716+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:55 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>cb5e5a72-8adb-49fe-81e4-33f8ad56499a</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T09:24:55.716+0200
+2021-06-30T09:24:55.716+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:55 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 2/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: cb5e5a72-8adb-49fe-81e4-33f8ad56499a: timestamp=2021-06-30T09:24:55.716+0200
+2021-06-30T09:24:55.865+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:55 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 3: timestamp=2021-06-30T09:24:55.865+0200
+2021-06-30T09:24:55.866+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:55 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=75d0fa2b9f35ca8630e3cf2d0538547e8bad25c50ab4d0876e9f2763684f6b7e
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T072455Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T09:24:55.866+0200
+2021-06-30T09:24:56.275+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:56 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 07:24:55 GMT
+X-Amzn-Requestid: 512ee0a0-992a-496f-9c6a-494c0bfb9390
+
+
+-----------------------------------------------------: timestamp=2021-06-30T09:24:56.275+0200
+2021-06-30T09:24:56.277+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:56 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>512ee0a0-992a-496f-9c6a-494c0bfb9390</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T09:24:56.275+0200
+2021-06-30T09:24:56.277+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:56 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 3/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: 512ee0a0-992a-496f-9c6a-494c0bfb9390: timestamp=2021-06-30T09:24:56.275+0200
+2021-06-30T09:24:56.545+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:56 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 4: timestamp=2021-06-30T09:24:56.544+0200
+2021-06-30T09:24:56.546+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:56 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=0b397648c325c317c2e76b1b00c18a00112885335862f867c5193723602e501a
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T072456Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T09:24:56.546+0200
+2021-06-30T09:24:56.965+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:56 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 07:24:56 GMT
+X-Amzn-Requestid: b35a2326-c7b2-4d34-b46b-8a2e91f123c1
+
+
+-----------------------------------------------------: timestamp=2021-06-30T09:24:56.965+0200
+2021-06-30T09:24:56.965+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:56 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>b35a2326-c7b2-4d34-b46b-8a2e91f123c1</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T09:24:56.965+0200
+2021-06-30T09:24:56.966+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:56 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 4/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: b35a2326-c7b2-4d34-b46b-8a2e91f123c1: timestamp=2021-06-30T09:24:56.965+0200
+2021-06-30T09:24:57.889+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:57 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 5: timestamp=2021-06-30T09:24:57.889+0200
+2021-06-30T09:24:57.890+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:57 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=e83ff2ae0371cdec43d581fa0c28f6748e590a0410500e11c2d21e65248f805f
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T072457Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T09:24:57.890+0200
+2021-06-30T09:24:58.301+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:58 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 07:24:57 GMT
+X-Amzn-Requestid: bfb7eac0-4bf6-4bdb-9a46-6a28f5083395
+
+
+-----------------------------------------------------: timestamp=2021-06-30T09:24:58.301+0200
+2021-06-30T09:24:58.301+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:58 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>bfb7eac0-4bf6-4bdb-9a46-6a28f5083395</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T09:24:58.301+0200
+2021-06-30T09:24:58.301+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:58 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 5/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: bfb7eac0-4bf6-4bdb-9a46-6a28f5083395: timestamp=2021-06-30T09:24:58.301+0200
+2021-06-30T09:24:58.766+0200 [TRACE] dag/walk: vertex "aws_instance.devops_web_01 (expand)" is waiting for "provider[\"registry.terraform.io/hashicorp/aws\"]"
+2021-06-30T09:24:58.767+0200 [TRACE] dag/walk: vertex "provider[\"registry.terraform.io/hashicorp/aws\"] (close)" is waiting for "aws_instance.devops_web_01 (expand)"
+2021-06-30T09:24:58.767+0200 [TRACE] dag/walk: vertex "root" is waiting for "meta.count-boundary (EachMode fixup)"
+2021-06-30T09:24:58.767+0200 [TRACE] dag/walk: vertex "meta.count-boundary (EachMode fixup)" is waiting for "aws_instance.devops_web_01 (expand)"
+2021-06-30T09:24:59.640+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:59 [DEBUG] [aws-sdk-go] DEBUG: Retrying Request sts/GetCallerIdentity, attempt 6: timestamp=2021-06-30T09:24:59.640+0200
+2021-06-30T09:24:59.641+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:24:59 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/1.0.0 (+https://www.terraform.io) terraform-provider-aws/3.47.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.66 (go1.16; linux; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAT5MRWUW3YIUMOG7U/20210630/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=5a8785a36058eec167ad0fbc07af1490674171b6caed75892d007a85b048d44f
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210630T072459Z
+X-Amz-Security-Token: FwoGZXIvYXdzEDgaDMSgg5aGkKjDGgKJayKBAbrUWHi9ungFCrCoApbWAyCMJUExfWb06U70qd4JTB8NwEFU3Z+93GZS7+u47GLEdi43kIX5+OqBMLDLuiSfPQW00Mqn2oKs+ycVjnEdB11uTdTpaPfWo8hz0bHCoJ8QhHLdy0KiM61MdG5wRMGPi4IpsNzRgYBvmIl1nOrvjzU1gSjQhM2GBjIoFLWm2ufvkNhO5kG3B6PU/6wFCdSzesD/wBPmXw6xEQLFGdAxRRfSuA==
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-06-30T09:24:59.641+0200
+2021-06-30T09:25:00.056+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:25:00 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 403 Forbidden
+Connection: close
+Content-Length: 297
+Content-Type: text/xml
+Date: Wed, 30 Jun 2021 07:24:59 GMT
+X-Amzn-Requestid: bf51828f-79c5-4a03-8e13-0a46dd9781c3
+
+
+-----------------------------------------------------: timestamp=2021-06-30T09:25:00.056+0200
+2021-06-30T09:25:00.056+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:25:00 [DEBUG] [aws-sdk-go] <ErrorResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <Error>
+    <Type>Sender</Type>
+    <Code>ExpiredToken</Code>
+    <Message>The security token included in the request is expired</Message>
+  </Error>
+  <RequestId>bf51828f-79c5-4a03-8e13-0a46dd9781c3</RequestId>
+</ErrorResponse>: timestamp=2021-06-30T09:25:00.056+0200
+2021-06-30T09:25:00.057+0200 [INFO]  provider.terraform-provider-aws_v3.47.0_x5: 2021/06/30 09:25:00 [DEBUG] [aws-sdk-go] DEBUG: Validate Response sts/GetCallerIdentity failed, attempt 6/25, error ExpiredToken: The security token included in the request is expired
+	status code: 403, request id: bf51828f-79c5-4a03-8e13-0a46dd9781c3: timestamp=2021-06-30T09:25:00.056+0200
+2021-06-30T09:25:00.797+0200 [TRACE] backend/local: waiting for the running operation to stop
+2021-06-30T09:25:00.798+0200 [WARN]  terraform: Stop called, initiating interrupt sequence
+2021-06-30T09:25:00.798+0200 [WARN]  terraform: run context exists, stopping
+2021-06-30T09:25:00.798+0200 [INFO]  terraform: waiting for graceful stop to complete
+2021-06-30T09:25:00.798+0200 [TRACE] Context: requesting providers and provisioners to gracefully stop
+2021-06-30T09:25:00.798+0200 [TRACE] provider.terraform-provider-aws_v3.47.0_x5: plugin received interrupt signal, ignoring: count=1 timestamp=2021-06-30T09:25:00.797+0200
+2021-06-30T09:25:00.798+0200 [TRACE] GRPCProvider: Stop
+2021-06-30T09:25:01.321+0200 [WARN]  running operation was forcefully canceled
+2021-06-30T09:25:01.321+0200 [INFO]  backend/local: plan operation was force-cancelled by interrupt
+2021-06-30T09:25:01.321+0200 [TRACE] provider.terraform-provider-aws_v3.47.0_x5: plugin received interrupt signal, ignoring: count=2 timestamp=2021-06-30T09:25:01.321+0200
+2021-06-30T09:25:01.322+0200 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2021-06-30T09:25:01.322+0200 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2021-06-30T09:25:01.325+0200 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-06-30T09:25:01.325+0200 [ERROR] plugin.(*GRPCProvider).ConfigureProvider: error="rpc error: code = Unavailable desc = transport is closing"
+2021-06-30T09:25:01.325+0200 [TRACE] vertex "provider[\"registry.terraform.io/hashicorp/aws\"]": visit complete
+2021-06-30T09:25:01.325+0200 [TRACE] dag/walk: upstream of "aws_instance.devops_web_01 (expand)" errored, so skipping
+2021-06-30T09:25:01.325+0200 [TRACE] dag/walk: upstream of "provider[\"registry.terraform.io/hashicorp/aws\"] (close)" errored, so skipping
+2021-06-30T09:25:01.325+0200 [TRACE] dag/walk: upstream of "meta.count-boundary (EachMode fixup)" errored, so skipping
+2021-06-30T09:25:01.325+0200 [TRACE] dag/walk: upstream of "root" errored, so skipping
+2021-06-30T09:25:01.325+0200 [WARN]  terraform: stop complete
+2021-06-30T09:25:01.330+0200 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/hashicorp/aws/3.47.0/linux_amd64/terraform-provider-aws_v3.47.0_x5 pid=21003
+2021-06-30T09:25:01.330+0200 [DEBUG] provider: plugin exited
